@@ -4,7 +4,15 @@ This project aims to build a comprehensive API set to support key e-commerce ope
 
 ## Table of Contents
 
-
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [API Routes](#api-routes)
+- [Authentication](#authentication)
+- [Rate Limiter](#rate-limiter)
+- [Validator](#validator)
+- [Contribution](#contribution)
+- [License](#license)
 
 
 ## Features
@@ -29,7 +37,19 @@ This project aims to build a comprehensive API set to support key e-commerce ope
 - **Rate limiting to prevent abuse:** Implements rate limiting to prevent abuse and ensure service stability.
 - **Validate request data:** Validates incoming request data to ensure data integrity and security.
 - **Handle errors gracefully:** Provides meaningful error messages and handles errors gracefully.
+- 
+## Tech Stack
 
+
+- **Node.js:** A JavaScript runtime for building scalable network applications.
+- **Express.js:** A web application framework for Node.js, providing robust features for building APIs and web applications.
+- **MongoDB:** A NoSQL database used for storing and managing data related to products, categories, carts, orders, and users.
+- **JSON Web Tokens (JWT):** A compact, URL-safe means of representing claims to be transferred between two parties. Used for user authentication and session management.
+- **express-rate-limit:** Middleware for rate limiting HTTP requests to prevent abuse and ensure service stability.
+- **bcrypt:** A library used for hashing passwords to enhance security.
+- **Validator:** A library used for validating request data to ensure data integrity and security.
+- **Mongoose:** An object modeling tool for MongoDB and Node.js, providing a schema-based solution to model application data.
+- 
 ## Getting Started
 
 1. **Clone the repository:**

@@ -48,7 +48,7 @@ This project aims to build a comprehensive API set to support key e-commerce ope
 3. **Set up environment variables:**
     Create a `.env` file in the root directory and add the following:
     ```env
-    PORT=8500
+    PORT=3000
     DATABASE_URL=mongodb://localhost:27017/E-Commerce_API
     JWT_SECRET=mysecretkey
     ```
@@ -58,3 +58,60 @@ This project aims to build a comprehensive API set to support key e-commerce ope
     npm run server
     ```
     The API server will be running at `http://localhost:3000`.
+
+## API Routes
+
+
+- **Add Product:** `POST /api/products`
+- **Update Product:** `PUT /api/products/:id`
+- **Delete Product:** `DELETE /api/products/:id`
+- **Get Product Details:** `GET /api/products/:id`
+- **Get All Products:** `GET /api/products`
+- **Get Products by Category:** `GET /api/products?category=:category_id`
+
+### Category Management
+
+- **Add Category:** `POST /api/categories`
+- **Update Category:** `PUT /api/categories/:id`
+- **Delete Category:** `DELETE /api/categories/:id`
+- **Get All Categories:** `GET /api/categories`
+
+### Cart Operations
+
+- **Add to Cart:** `POST /api/cart/add`
+- **View Cart:** `GET /api/cart`
+- **Update Cart:** `PATCH /api/cart/:productId`
+- **Remove from Cart:** `DELETE /api/cart/:productId`
+
+### Order Processing
+
+- **Place Order:** `POST /api/orders`
+- **Get Order History:** `GET /api/orders`
+- **Get Order Details:** `GET /api/orders/:id`
+
+### User Authentication
+
+- **User Registration:** `POST /api/auth/register`
+- **User Login:** `POST /api/auth/login`
+
+
+## Authentication
+
+This API uses JSON Web Tokens (JWT) for authentication. To access protected routes, include the JWT token in the request headers:
+
+
+## Rate Limiter
+
+This API implements rate limiting using the express-rate-limit middleware to prevent abuse and ensure service stability.
+
+## Validator
+
+Validator is used to validate request data, ensuring data integrity and security.
+
+## Contribution
+
+Contributions are welcome! Fork the project, create your feature branch, commit your changes, and open a pull request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
